@@ -8,3 +8,11 @@ docker-compose -f docker-compose.app.yml up
 ```bash
 docker-compose -f docker-compose.test.yml run web pytest -vv
 ```
+### Technologies used
+FastAP
+Pydantic
+Swagger
+SQLAlchemy
+Typing
+PostgreSQL
+Pytest
