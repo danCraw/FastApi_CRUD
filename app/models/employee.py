@@ -3,7 +3,7 @@ from uuid import UUID
 
 from pydantic import validator
 
-from app.core import config
+from app.core.config import config
 from app.models.base import BaseSchema
 
 
