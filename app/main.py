@@ -16,8 +16,8 @@ def get_application() -> FastAPI:
         description=config.DESCRIPTION,
         debug=config.DEBUG,
     )
-    application.add_event_handler("startup", create_start_app_handler(application))
-    application.add_event_handler("shutdown", create_stop_app_handler(application))
+    application.add_event_handler("startup", create_start_app_handler())
+    application.add_event_handler("shutdown", create_stop_app_handler())
 
     application.include_router(api.api_router, prefix=config.API_V1_STR)
     application.include_router(api.employees_router, prefix=config.API_V1_STR)
